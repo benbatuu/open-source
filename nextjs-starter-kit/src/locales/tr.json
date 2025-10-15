@@ -1,0 +1,93 @@
+{
+  "hero": {
+    "title": "Modern Web Uygulamaları Daha Hızlı Oluşturun",
+    "subtitle": "Premium tasarım, akıcı animasyonlar, kimlik doğrulama ve kurumsal düzeyde özelliklerle kapsamlı Next.js 15 başlangıç kiti. Bir sonraki projenizi dakikalar içinde oluşturmaya başlayın.",
+    "cta": "Başlayın",
+    "demo": "Canlı Demo"
+  },
+  "features": {
+    "title": "Oluşturmak İçin İhtiyacınız Olan Her Şey",
+    "subtitle": "Hızlı geliştirme için modern araçlar ve en iyi uygulamalarla önceden yapılandırılmış",
+    "modern": {
+      "title": "Modern Mimari",
+      "description": "Optimal performans için Next.js 15, App Router, TypeScript ve Server Components."
+    },
+    "design": {
+      "title": "Premium Tasarım",
+      "description": "shadcn/ui bileşenleri, karanlık/aydınlık tema ve akıcı animasyonlarla güzel UI."
+    },
+    "auth": {
+      "title": "Kimlik Doğrulama Hazır",
+      "description": "Korumalı rotalar ve Zod kullanarak form doğrulama ile demo kimlik doğrulama sistemi."
+    },
+    "production": {
+      "title": "Üretim Hazır",
+      "description": "SEO optimize edilmiş, performans ayarlanmış ve Vercel ile dağıtım hazır."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Tekrar hoş geldiniz",
+      "subtitle": "Hesabınıza erişmek için kimlik bilgilerinizi girin",
+      "email": "E-posta",
+      "password": "Şifre",
+      "submit": "Giriş yap",
+      "loading": "Giriş yapılıyor...",
+      "noAccount": "Hesabınız yok mu?",
+      "signUp": "Kayıt ol",
+      "demoCredentials": "Demo kimlik bilgileri:",
+      "demoEmail": "demo@example.com",
+      "demoPassword": "password"
+    },
+    "register": {
+      "title": "Hesap oluştur",
+      "subtitle": "Hesabınızı oluşturmak için bilgilerinizi girin",
+      "name": "Ad",
+      "email": "E-posta",
+      "password": "Şifre",
+      "confirmPassword": "Şifreyi Onayla",
+      "submit": "Hesap oluştur",
+      "loading": "Hesap oluşturuluyor...",
+      "hasAccount": "Zaten hesabınız var mı?",
+      "signIn": "Giriş yap"
+    }
+  },
+  "dashboard": {
+    "title": "Kontrol Paneli",
+    "welcome": "Tekrar hoş geldiniz, {name}!",
+    "subtitle": "Hesabınızla bugün neler olduğunu burada görebilirsiniz.",
+    "logout": "Çıkış yap",
+    "stats": {
+      "revenue": "Toplam Gelir",
+      "subscriptions": "Abonelikler",
+      "sales": "Satışlar",
+      "active": "Şu Anda Aktif"
+    },
+    "profile": {
+      "title": "Profil Bilgileri",
+      "subtitle": "Hesap detaylarınız ve tercihleriniz",
+      "userId": "Kullanıcı ID",
+      "accountType": "Hesap Türü"
+    }
+  },
+  "navigation": {
+    "home": "Ana Sayfa",
+    "dashboard": "Kontrol Paneli",
+    "login": "Giriş",
+    "register": "Kayıt",
+    "logout": "Çıkış"
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Bir hata oluştu",
+    "success": "Başarılı",
+    "cancel": "İptal",
+    "save": "Kaydet",
+    "edit": "Düzenle",
+    "delete": "Sil",
+    "close": "Kapat",
+    "back": "Geri",
+    "next": "İleri",
+    "previous": "Önceki"
+  }
+}

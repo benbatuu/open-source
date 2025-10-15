@@ -1,0 +1,93 @@
+{
+  "hero": {
+    "title": "Build Modern Web Apps Faster",
+    "subtitle": "A comprehensive Next.js 15 starter kit with premium design, smooth animations, authentication, and enterprise-grade features. Start building your next project in minutes.",
+    "cta": "Get Started",
+    "demo": "Live Demo"
+  },
+  "features": {
+    "title": "Everything You Need to Build",
+    "subtitle": "Pre-configured with modern tools and best practices for rapid development",
+    "modern": {
+      "title": "Modern Architecture",
+      "description": "Next.js 15 with App Router, TypeScript, and Server Components for optimal performance."
+    },
+    "design": {
+      "title": "Premium Design",
+      "description": "Beautiful UI with shadcn/ui components, dark/light theme, and smooth animations."
+    },
+    "auth": {
+      "title": "Authentication Ready",
+      "description": "Demo auth system with protected routes and form validation using Zod."
+    },
+    "production": {
+      "title": "Production Ready",
+      "description": "SEO optimized, performance tuned, and deployment ready with Vercel."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome back",
+      "subtitle": "Enter your credentials to access your account",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign in",
+      "loading": "Signing in...",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up",
+      "demoCredentials": "Demo credentials:",
+      "demoEmail": "demo@example.com",
+      "demoPassword": "password"
+    },
+    "register": {
+      "title": "Create an account",
+      "subtitle": "Enter your information to create your account",
+      "name": "Name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "submit": "Create account",
+      "loading": "Creating account...",
+      "hasAccount": "Already have an account?",
+      "signIn": "Sign in"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back, {name}!",
+    "subtitle": "Here's what's happening with your account today.",
+    "logout": "Logout",
+    "stats": {
+      "revenue": "Total Revenue",
+      "subscriptions": "Subscriptions",
+      "sales": "Sales",
+      "active": "Active Now"
+    },
+    "profile": {
+      "title": "Profile Information",
+      "subtitle": "Your account details and preferences",
+      "userId": "User ID",
+      "accountType": "Account Type"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous"
+  }
+}
