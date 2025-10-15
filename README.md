@@ -49,6 +49,62 @@ Welcome to my open source projects repository! This collection contains carefull
 
 [📖 Documentation](./nextjs-saas-starter-kit/README.md) • [🎨 Live Demo](https://nextjs-saas-starter-kit.bennbatuu.com) • [📦 Install](https://github.com/benbatuu/open-source/tree/main/nextjs-saas-starter-kit)
 
+### 🧪 [API Testing Suite](./api-testing-suite/)
+
+**A comprehensive API testing suite with automated testing, monitoring, and documentation generation.**
+
+- 🚧 **Coming Soon** - Currently in development
+- ✅ **Automated API Testing** with Jest and Supertest
+- ✅ **API Documentation Generation** from tests
+- ✅ **Performance Testing** with load testing capabilities
+- ✅ **Mock Server** for development and testing
+- ✅ **API Monitoring** with real-time alerts
+- ✅ **Test Data Management** with fixtures and factories
+
+[📖 Documentation](./api-testing-suite/README.md) • [🎨 Live Demo](https://api-testing-suite.bennbatuu.com) • [📦 Install](https://github.com/benbatuu/open-source/tree/main/api-testing-suite)
+
+### 🎨 [React Component Library](./react-component-library/)
+
+**A comprehensive React component library with modern design system, accessibility, and developer experience.**
+
+- 🚧 **Coming Soon** - Currently in development
+- ✅ **Modern Design System** with consistent tokens and themes
+- ✅ **Accessibility First** with WCAG 2.1 AA compliance
+- ✅ **TypeScript Support** with full type safety
+- ✅ **Storybook Integration** for component documentation
+- ✅ **Theme Support** with light/dark mode
+- ✅ **Animation Support** with Framer Motion
+
+[📖 Documentation](./react-component-library/README.md) • [🎨 Storybook](https://react-components.bennbatuu.com) • [📦 Install](https://github.com/benbatuu/open-source/tree/main/react-component-library)
+
+### 📝 [Headless JSON CMS](./headless-json-cms/)
+
+**A lightweight, headless CMS built with Node.js and TypeScript for managing JSON content with a modern admin interface.**
+
+- 🚧 **Coming Soon** - Currently in development
+- ✅ **JSON Content Management** with flexible schema
+- ✅ **Modern Admin Interface** with React and TypeScript
+- ✅ **API-First Architecture** with REST and GraphQL
+- ✅ **Real-time Updates** with WebSocket support
+- ✅ **Media Management** with image optimization
+- ✅ **User Authentication** with role-based access
+
+[📖 Documentation](./headless-json-cms/README.md) • [🎨 Live Demo](https://headless-cms.bennbatuu.com) • [📦 Install](https://github.com/benbatuu/open-source/tree/main/headless-json-cms)
+
+### 🔄 [EnvSync](./envsync/)
+
+**A powerful tool for managing, syncing, and securing environment variables across different environments and team members.**
+
+- 🚧 **Coming Soon** - Currently in development
+- ✅ **Environment Sync** across development, staging, and production
+- ✅ **Secure Storage** with encryption and access control
+- ✅ **Team Collaboration** with role-based permissions
+- ✅ **CLI Tool** for easy integration with existing workflows
+- ✅ **Web Dashboard** for visual management
+- ✅ **API Integration** with popular services
+
+[📖 Documentation](./envsync/README.md) • [🎨 Live Demo](https://envsync.bennbatuu.com) • [📦 Install](https://github.com/benbatuu/open-source/tree/main/envsync)
+
 ---
 
 ## 🎯 Project Categories
@@ -58,13 +114,14 @@ Welcome to my open source projects repository! This collection contains carefull
 - [NextJS SaaS Starter Kit](./nextjs-saas-starter-kit/) - Complete SaaS solution template
 
 ### 🎨 **UI Libraries & Components**
-- *Coming soon...*
+- [React Component Library](./react-component-library/) - Modern React component library
 
 ### 🔧 **Developer Tools**
-- *Coming soon...*
+- [API Testing Suite](./api-testing-suite/) - Comprehensive API testing framework
+- [EnvSync](./envsync/) - Environment variables management tool
 
 ### 📱 **Full-Stack Applications**
-- *Coming soon...*
+- [Headless JSON CMS](./headless-json-cms/) - Lightweight headless CMS
 
 ---
 
