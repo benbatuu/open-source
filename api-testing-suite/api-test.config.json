@@ -1,0 +1,54 @@
+{
+  "name": "API Testing Suite Configuration",
+  "description": "Default configuration for API Testing Suite",
+  "baseUrl": "http://localhost:3000",
+  "timeout": 30000,
+  "retries": 3,
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "API-Testing-Suite/1.0.0",
+    "Accept": "application/json"
+  },
+  "auth": {
+    "type": "bearer",
+    "token": "your-api-token-here"
+  },
+  "plugins": [
+    {
+      "name": "performance-monitor",
+      "enabled": true,
+      "config": {
+        "thresholds": {
+          "responseTime": 1000,
+          "throughput": 100
+        }
+      }
+    },
+    {
+      "name": "reporting",
+      "enabled": true,
+      "config": {
+        "formats": ["json", "html"],
+        "outputDir": "./test-results"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "name": "mock-server",
+      "enabled": true,
+      "config": {
+        "port": 3001,
+        "autoStart": true
+      }
+    },
+    {
+      "name": "data-manager",
+      "enabled": true,
+      "config": {
+        "fixturesDir": "./fixtures",
+        "factoriesDir": "./factories"
+      }
+    }
+  ]
+}

@@ -15,20 +15,29 @@
 
 ---
 
-## 🚧 Coming Soon
+## 🚀 Getting Started
 
-This project is currently in development. We're building a comprehensive API testing suite that will include:
+This project provides a comprehensive API testing suite with modular architecture and extensive features:
 
-### 🎯 **Planned Features**
+### 🎯 **Current Features**
 
-- ✅ **Automated API Testing** with Jest and Supertest
-- ✅ **API Documentation Generation** from tests
-- ✅ **Performance Testing** with load testing capabilities
-- ✅ **Mock Server** for development and testing
-- ✅ **API Monitoring** with real-time alerts
-- ✅ **Test Data Management** with fixtures and factories
-- ✅ **CI/CD Integration** with GitHub Actions
+- ✅ **Modular Test Runner** with plugin architecture
+- ✅ **Configuration Management** (JSON, YAML support)
+- ✅ **CLI Interface** for easy test execution
+- ✅ **Test Result Reporting** with detailed analytics
+- ✅ **Plugin System** for extensibility
+- ✅ **TypeScript Support** with full type safety
+- ✅ **Jest Integration** for unit testing
 - ✅ **Multiple API Support** (REST, GraphQL, WebSocket)
+
+### 🚧 **Planned Features**
+
+- 🔄 **API Documentation Generation** from tests
+- 🔄 **Performance Testing** with load testing capabilities
+- 🔄 **Mock Server** for development and testing
+- 🔄 **API Monitoring** with real-time alerts
+- 🔄 **Test Data Management** with fixtures and factories
+- 🔄 **CI/CD Integration** with GitHub Actions
 
 ### 🏗️ **Tech Stack**
 
@@ -73,7 +82,9 @@ This project is currently in development. We're building a comprehensive API tes
 
 ---
 
-## 🚀 Quick Start (Coming Soon)
+## 🚀 Quick Start
+
+### CLI Usage
 
 ```bash
 # Clone the repository
@@ -83,34 +94,77 @@ cd open-source/api-testing-suite
 # Install dependencies
 npm install
 
-# Set up environment variables
-cp .env.example .env.local
+# Build the project
+npm run build
+
+# Initialize a new test project
+npm run cli init
 
 # Run tests
-npm test
+npm run cli run
 
-# Generate documentation
-npm run docs:generate
+# Run with verbose logging
+npm run cli run -- --verbose
+
+# Validate configuration
+npm run cli validate
 ```
+
+### Web UI Usage
+
+```bash
+# Start the web interface
+cd web-ui
+npm install
+npm run dev
+
+# Open http://localhost:5173 in your browser
+```
+
+The web UI provides a Postman-like experience with:
+- 📊 **Dashboard** - Test overview and statistics
+- 🔧 **Request Builder** - Visual API testing
+- 📁 **Test Suites** - Organize and manage tests
+- 🖥️ **Mock Server** - Visual mock endpoint management
+- 📱 **Responsive Design** - Works on all devices
 
 ---
 
-## 📁 Project Structure (Planned)
+## 📁 Project Structure
 
 ```
 api-testing-suite/
-├── src/
-│   ├── tests/                  # Test files
-│   │   ├── unit/              # Unit tests
-│   │   ├── integration/       # Integration tests
-│   │   └── e2e/               # End-to-end tests
-│   ├── fixtures/              # Test data and fixtures
-│   ├── mocks/                 # Mock implementations
-│   ├── utils/                 # Testing utilities
-│   └── config/                # Configuration files
-├── docs/                      # Generated documentation
-├── scripts/                   # Build and deployment scripts
-└── examples/                  # Example implementations
+├── src/                      # Backend core
+│   ├── core/                 # Core functionality
+│   │   ├── runner/          # Test runner
+│   │   ├── config/          # Configuration management
+│   │   ├── plugin/          # Plugin system
+│   │   └── logger/          # Logging system
+│   ├── modules/             # Feature modules
+│   │   ├── test-executor/   # Test execution
+│   │   ├── api-client/      # HTTP client
+│   │   ├── data-manager/    # Test data management
+│   │   ├── mock-server/     # Mock server
+│   │   ├── reporting/       # Test reporting
+│   │   └── performance/     # Performance testing
+│   ├── cli/                 # Command line interface
+│   ├── types/               # TypeScript type definitions
+│   └── test/                # Test files
+├── web-ui/                  # Frontend web interface
+│   ├── src/
+│   │   ├── components/      # React components
+│   │   │   ├── Layout/      # Layout components
+│   │   │   ├── Dashboard/   # Dashboard
+│   │   │   ├── API/         # API testing UI
+│   │   │   └── Mock/        # Mock server UI
+│   │   ├── App.tsx          # Main app
+│   │   └── main.tsx         # Entry point
+│   ├── package.json         # Frontend dependencies
+│   └── tailwind.config.js   # Styling config
+├── examples/                # Example implementations
+├── docs/                    # Documentation
+├── api-test.config.json     # Default configuration
+└── test-suites.json         # Example test suites
 ```
 
 ---

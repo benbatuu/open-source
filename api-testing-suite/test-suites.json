@@ -1,0 +1,211 @@
+[
+  {
+    "name": "User Management API Tests",
+    "description": "Comprehensive tests for user management endpoints",
+    "config": {
+      "baseUrl": "http://localhost:3000/api",
+      "timeout": 10000
+    },
+    "setup": [
+      {
+        "name": "Setup test database",
+        "type": "before",
+        "action": "async () => { console.log('Setting up test database...'); }"
+      }
+    ],
+    "teardown": [
+      {
+        "name": "Cleanup test database",
+        "type": "after",
+        "action": "async () => { console.log('Cleaning up test database...'); }"
+      }
+    ],
+    "tests": [
+      {
+        "name": "Health Check",
+        "description": "Verify API health endpoint is working",
+        "type": "integration",
+        "method": "GET",
+        "url": "/health",
+        "expectedStatus": 200,
+        "expectedResponse": {
+          "status": "ok",
+          "timestamp": "string"
+        },
+        "assertions": [
+          {
+            "type": "responseTime",
+            "operator": "lessThan",
+            "expected": 1000
+          }
+        ],
+        "tags": ["health", "smoke"]
+      },
+      {
+        "name": "Get All Users",
+        "description": "Test retrieving all users",
+        "type": "integration",
+        "method": "GET",
+        "url": "/users",
+        "headers": {
+          "Authorization": "Bearer test-token"
+        },
+        "expectedStatus": 200,
+        "assertions": [
+          {
+            "type": "body",
+            "path": "users",
+            "operator": "contains"
+          },
+          {
+            "type": "header",
+            "path": "content-type",
+            "expected": "application/json"
+          }
+        ],
+        "tags": ["users", "crud"]
+      },
+      {
+        "name": "Create New User",
+        "description": "Test creating a new user",
+        "type": "integration",
+        "method": "POST",
+        "url": "/users",
+        "headers": {
+          "Authorization": "Bearer test-token",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "name": "Test User",
+          "email": "test@example.com",
+          "age": 25
+        },
+        "expectedStatus": 201,
+        "expectedResponse": {
+          "id": "string",
+          "name": "Test User",
+          "email": "test@example.com",
+          "age": 25,
+          "createdAt": "string"
+        },
+        "assertions": [
+          {
+            "type": "body",
+            "path": "id",
+            "operator": "contains"
+          }
+        ],
+        "tags": ["users", "crud", "create"]
+      },
+      {
+        "name": "Get User by ID",
+        "description": "Test retrieving a specific user by ID",
+        "type": "integration",
+        "method": "GET",
+        "url": "/users/1",
+        "headers": {
+          "Authorization": "Bearer test-token"
+        },
+        "expectedStatus": 200,
+        "assertions": [
+          {
+            "type": "body",
+            "path": "id",
+            "expected": 1
+          }
+        ],
+        "tags": ["users", "crud", "read"]
+      },
+      {
+        "name": "Update User",
+        "description": "Test updating an existing user",
+        "type": "integration",
+        "method": "PUT",
+        "url": "/users/1",
+        "headers": {
+          "Authorization": "Bearer test-token",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "name": "Updated User",
+          "email": "updated@example.com"
+        },
+        "expectedStatus": 200,
+        "expectedResponse": {
+          "id": 1,
+          "name": "Updated User",
+          "email": "updated@example.com"
+        },
+        "tags": ["users", "crud", "update"]
+      },
+      {
+        "name": "Delete User",
+        "description": "Test deleting a user",
+        "type": "integration",
+        "method": "DELETE",
+        "url": "/users/1",
+        "headers": {
+          "Authorization": "Bearer test-token"
+        },
+        "expectedStatus": 204,
+        "tags": ["users", "crud", "delete"]
+      },
+      {
+        "name": "Invalid User ID",
+        "description": "Test handling of invalid user ID",
+        "type": "integration",
+        "method": "GET",
+        "url": "/users/invalid",
+        "headers": {
+          "Authorization": "Bearer test-token"
+        },
+        "expectedStatus": 400,
+        "expectedResponse": {
+          "error": "Invalid user ID"
+        },
+        "tags": ["users", "error-handling"]
+      },
+      {
+        "name": "Unauthorized Access",
+        "description": "Test unauthorized access to protected endpoint",
+        "type": "integration",
+        "method": "GET",
+        "url": "/users",
+        "expectedStatus": 401,
+        "expectedResponse": {
+          "error": "Unauthorized"
+        },
+        "tags": ["auth", "security"]
+      }
+    ]
+  },
+  {
+    "name": "Performance Tests",
+    "description": "Performance and load testing scenarios",
+    "config": {
+      "baseUrl": "http://localhost:3000/api",
+      "timeout": 5000
+    },
+    "tests": [
+      {
+        "name": "Load Test - Get Users",
+        "description": "Test performance under load",
+        "type": "performance",
+        "method": "GET",
+        "url": "/users",
+        "headers": {
+          "Authorization": "Bearer test-token"
+        },
+        "expectedStatus": 200,
+        "assertions": [
+          {
+            "type": "responseTime",
+            "operator": "lessThan",
+            "expected": 500
+          }
+        ],
+        "tags": ["performance", "load"]
+      }
+    ]
+  }
+]

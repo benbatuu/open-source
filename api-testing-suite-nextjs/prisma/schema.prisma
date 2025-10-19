@@ -1,0 +1,165 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model TestSuite {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  status      String   @default("active") // active, inactive
+  
+  tests       Test[]
+  testRuns    TestRun[]
+  
+  @@map("test_suites")
+}
+
+model Test {
+  id              String   @id @default(cuid())
+  name            String
+  method          String   // GET, POST, PUT, DELETE, PATCH
+  url             String
+  headers         String?  // JSON string
+  body            String?  // JSON string
+  expectedStatus  Int      @default(200)
+  timeout         Int      @default(30000) // milliseconds
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  
+  testSuiteId     String
+  testSuite       TestSuite @relation(fields: [testSuiteId], references: [id], onDelete: Cascade)
+  
+  assertions      Assertion[]
+  testResults     TestResult[]
+  
+  @@map("tests")
+}
+
+model Assertion {
+  id          String   @id @default(cuid())
+  type        String   // status, response_time, json_path, header, body_contains
+  expected    String   // JSON string
+  jsonPath    String?  // for json_path assertions
+  headerName  String?  // for header assertions
+  createdAt   DateTime @default(now())
+  
+  testId      String
+  test        Test     @relation(fields: [testId], references: [id], onDelete: Cascade)
+  
+  testResultAssertions TestResultAssertion[]
+  
+  @@map("assertions")
+}
+
+model TestRun {
+  id          String   @id @default(cuid())
+  status      String   // running, completed, failed
+  startTime   DateTime @default(now())
+  endTime     DateTime?
+  summary     String?  // JSON string with summary data
+  
+  testSuiteId String
+  testSuite   TestSuite @relation(fields: [testSuiteId], references: [id], onDelete: Cascade)
+  
+  results     TestResult[]
+  
+  @@map("test_runs")
+}
+
+model TestResult {
+  id          String   @id @default(cuid())
+  status      String   // passed, failed, skipped
+  duration    Int      // milliseconds
+  response    String?  // JSON string with response data
+  error       String?  // error message if failed
+  createdAt   DateTime @default(now())
+  
+  testId      String
+  test        Test     @relation(fields: [testId], references: [id], onDelete: Cascade)
+  
+  testRunId   String
+  testRun     TestRun  @relation(fields: [testRunId], references: [id], onDelete: Cascade)
+  
+  assertions  TestResultAssertion[]
+  
+  @@map("test_results")
+}
+
+model TestResultAssertion {
+  id          String   @id @default(cuid())
+  passed      Boolean
+  actual      String?  // JSON string with actual value
+  message     String?  // assertion message
+  
+  assertionId String
+  assertion   Assertion @relation(fields: [assertionId], references: [id], onDelete: Cascade)
+  
+  testResultId String
+  testResult   TestResult @relation(fields: [testResultId], references: [id], onDelete: Cascade)
+  
+  @@map("test_result_assertions")
+}
+
+model Environment {
+  id          String   @id @default(cuid())
+  name        String
+  baseUrl     String
+  headers     String?  // JSON string
+  variables   String?  // JSON string
+  active      Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  @@map("environments")
+}
+
+model DataFixture {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  data        String   // JSON string
+  type        String   @default("json") // json, csv, xml
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  @@map("data_fixtures")
+}
+
+model DataFactory {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  fields      String   // JSON string with field definitions
+  usage       Int      @default(0)
+  lastUsed    DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  @@map("data_factories")
+}
+
+model MockEndpoint {
+  id            String   @id @default(cuid())
+  name          String
+  path          String
+  method        String   // GET, POST, PUT, DELETE, PATCH
+  statusCode    Int      @default(200)
+  responseBody  String   // JSON string
+  headers       String   // JSON string
+  delay         Int      @default(0) // milliseconds
+  enabled       Boolean  @default(true)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  
+  @@map("mock_endpoints")
+}
