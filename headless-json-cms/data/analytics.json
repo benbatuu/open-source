@@ -1,0 +1,142 @@
+{
+  "views": [
+    {
+      "id": "176099151141480eyj8505",
+      "page": "/",
+      "postId": "test-post",
+      "category": "technology",
+      "sessionId": "test-session-1",
+      "ip": "::1",
+      "userAgent": "curl/8.7.1",
+      "timestamp": "2025-10-20T20:18:31.414Z"
+    },
+    {
+      "id": "1760991543321t7ikoc84w",
+      "page": "/",
+      "sessionId": "1760991543054xnaox1p7q",
+      "ip": "::ffff:192.168.1.249",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0.1 Mobile/15E148 Safari/604.1",
+      "referrer": "http://192.168.1.191:3000/",
+      "timestamp": "2025-10-20T20:19:03.321Z"
+    },
+    {
+      "id": "1760991552317fir5dk3v9",
+      "page": "/blog/machine-learning-fundamentals-a-beginners-guide",
+      "sessionId": "1760991543054xnaox1p7q",
+      "ip": "::ffff:192.168.1.249",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0.1 Mobile/15E148 Safari/604.1",
+      "referrer": "http://192.168.1.191:3000/blog/machine-learning-fundamentals-a-beginners-guide",
+      "timestamp": "2025-10-20T20:19:12.317Z"
+    },
+    {
+      "id": "17609916465095j35jtbp3",
+      "page": "/",
+      "sessionId": "1760991646260tgslvvh27",
+      "ip": "::1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:3000/",
+      "timestamp": "2025-10-20T20:20:46.509Z"
+    },
+    {
+      "id": "1760991658662baw2pufru",
+      "page": "/blog/machine-learning-fundamentals-a-beginners-guide",
+      "sessionId": "1760991646260tgslvvh27",
+      "ip": "::1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:3000/blog/machine-learning-fundamentals-a-beginners-guide",
+      "timestamp": "2025-10-20T20:20:58.662Z"
+    },
+    {
+      "id": "17609923041189j1cl422b",
+      "page": "/",
+      "sessionId": "1760992303847anmnxbga9",
+      "ip": "::1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:3001/",
+      "timestamp": "2025-10-20T20:31:44.118Z"
+    },
+    {
+      "id": "176104775444633k78ot1v",
+      "page": "/",
+      "sessionId": "1760992303847anmnxbga9",
+      "ip": "::1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:3001/",
+      "timestamp": "2025-10-21T11:55:54.446Z"
+    },
+    {
+      "id": "1761049614266m8nftv588",
+      "page": "/blog/machine-learning-fundamentals-a-beginners-guide",
+      "sessionId": "1760992296420a3ybsi7cf",
+      "ip": "::1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:3000/blog/machine-learning-fundamentals-a-beginners-guide",
+      "timestamp": "2025-10-21T12:26:54.266Z"
+    },
+    {
+      "id": "17610497470062hdzepweu",
+      "page": "/",
+      "sessionId": "1760992296420a3ybsi7cf",
+      "ip": "::1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:3000/",
+      "timestamp": "2025-10-21T12:29:07.006Z"
+    },
+    {
+      "id": "1761050497777gb525mu2d",
+      "page": "/blog/revolutionary-ai-developments-reshaping-technology-in-2024",
+      "sessionId": "1760992296420a3ybsi7cf",
+      "ip": "::1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:3000/blog/revolutionary-ai-developments-reshaping-technology-in-2024",
+      "timestamp": "2025-10-21T12:41:37.777Z"
+    },
+    {
+      "id": "1761053979607jbo0x8ns2",
+      "page": "/category/technology/revolutionary-ai-developments-reshaping-technology-in-2024",
+      "sessionId": "1760992296420a3ybsi7cf",
+      "ip": "::1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:3000/category/technology/revolutionary-ai-developments-reshaping-technology-in-2024",
+      "timestamp": "2025-10-21T13:39:39.607Z"
+    },
+    {
+      "id": "1761054091152kl73zs9tz",
+      "page": "/category/web-development/machine-learning-fundamentals-a-beginners-guide",
+      "sessionId": "1760992296420a3ybsi7cf",
+      "ip": "::1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:3000/category/web-development/machine-learning-fundamentals-a-beginners-guide",
+      "timestamp": "2025-10-21T13:41:31.152Z"
+    },
+    {
+      "id": "1761054106036zzrgvpje6",
+      "page": "/blog/revolutionary-ai-developments-reshaping-technology-in-2024",
+      "sessionId": "1760992296420a3ybsi7cf",
+      "ip": "::1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:3000/blog/revolutionary-ai-developments-reshaping-technology-in-2024",
+      "timestamp": "2025-10-21T13:41:46.036Z"
+    },
+    {
+      "id": "1761054188476i2pxd1u4w",
+      "page": "/blog/machine-learning-fundamentals-a-beginners-guide",
+      "sessionId": "1760992296420a3ybsi7cf",
+      "ip": "::1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:3000/blog/machine-learning-fundamentals-a-beginners-guide",
+      "timestamp": "2025-10-21T13:43:08.476Z"
+    },
+    {
+      "id": "1761056039182cjvbbjbo5",
+      "page": "/category/web-development/machine-learning-fundamentals-a-beginners-guide",
+      "sessionId": "1760992296420a3ybsi7cf",
+      "ip": "::1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:3000/category/web-development/machine-learning-fundamentals-a-beginners-guide",
+      "timestamp": "2025-10-21T14:13:59.182Z"
+    }
+  ],
+  "comments": [],
+  "lastUpdated": "2025-10-21T14:13:59.182Z"
+}

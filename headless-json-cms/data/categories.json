@@ -1,0 +1,35 @@
+[
+  {
+    "id": "tech",
+    "name": "Technology",
+    "slug": "technology",
+    "description": "Latest technology news and insights",
+    "color": "#3B82F6",
+    "icon": "💻",
+    "createdAt": "2025-10-21T13:20:57.204Z",
+    "updatedAt": "2025-10-21T13:20:57.204Z",
+    "createdBy": "system"
+  },
+  {
+    "id": "ai",
+    "name": "Artificial Intelligence",
+    "slug": "artificial-intelligence",
+    "description": "AI developments and machine learning",
+    "color": "#8B5CF6",
+    "icon": "🤖",
+    "createdAt": "2025-10-21T13:20:57.204Z",
+    "updatedAt": "2025-10-21T13:20:57.204Z",
+    "createdBy": "system"
+  },
+  {
+    "id": "web-dev",
+    "name": "Web Development",
+    "slug": "web-development",
+    "description": "Web development tutorials and tips",
+    "color": "#10B981",
+    "icon": "🌐",
+    "createdAt": "2025-10-21T13:20:57.204Z",
+    "updatedAt": "2025-10-21T13:20:57.204Z",
+    "createdBy": "system"
+  }
+]

@@ -1,0 +1,101 @@
+{
+  "id": "machine-learning-basics",
+  "title": "Machine Learning Fundamentals: A Beginner's Guide",
+  "slug": "machine-learning-fundamentals-a-beginners-guide",
+  "content": {
+    "blocks": [
+      {
+        "id": "header1",
+        "type": "header",
+        "data": {
+          "text": "Introduction to Machine Learning",
+          "level": 2
+        }
+      },
+      {
+        "id": "para1",
+        "type": "paragraph",
+        "data": {
+          "text": "Machine learning is a subset of artificial intelligence that enables computers to learn and make decisions from data without being explicitly programmed. This comprehensive guide will walk you through the fundamental concepts, algorithms, and applications of machine learning."
+        }
+      },
+      {
+        "id": "header2",
+        "type": "header",
+        "data": {
+          "text": "Types of Machine Learning",
+          "level": 3
+        }
+      },
+      {
+        "id": "list1",
+        "type": "list",
+        "data": {
+          "style": "unordered",
+          "meta": {},
+          "items": [
+            {
+              "content": "Supervised Learning: Learning with labeled training data",
+              "meta": {},
+              "items": []
+            },
+            {
+              "content": "Unsupervised Learning: Finding patterns in unlabeled data",
+              "meta": {},
+              "items": []
+            },
+            {
+              "content": "Reinforcement Learning: Learning through interaction and feedback",
+              "meta": {},
+              "items": []
+            }
+          ]
+        }
+      },
+      {
+        "id": "header3",
+        "type": "header",
+        "data": {
+          "text": "Common Algorithms",
+          "level": 3
+        }
+      },
+      {
+        "id": "para2",
+        "type": "paragraph",
+        "data": {
+          "text": "Some of the most widely used machine learning algorithms include linear regression, decision trees, random forests, support vector machines, and neural networks. Each algorithm has its strengths and is suited for different types of problems."
+        }
+      },
+      {
+        "id": "header4",
+        "type": "header",
+        "data": {
+          "text": "Getting Started",
+          "level": 3
+        }
+      },
+      {
+        "id": "para3",
+        "type": "paragraph",
+        "data": {
+          "text": "To begin your machine learning journey, start with understanding the basics of statistics and programming. Python is the most popular language for machine learning, with libraries like scikit-learn, TensorFlow, and PyTorch making it easier to implement algorithms."
+        }
+      }
+    ]
+  },
+  "schema": "blog",
+  "status": "published",
+  "createdAt": "2024-12-19T10:00:00.000Z",
+  "updatedAt": "2025-10-20T19:08:52.153Z",
+  "author": "ML Expert",
+  "metadata": {
+    "seo-title": "Machine Learning Fundamentals: Complete Beginner's Guide",
+    "seo-description": "Learn the fundamentals of machine learning with this comprehensive beginner's guide. Understand algorithms, types, and applications of ML.",
+    "seo-keywords": "machine learning, AI, algorithms, beginner guide, data science",
+    "seo-image": "",
+    "canonical-url": "",
+    "cover": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&h=630&fit=crop&crop=center",
+    "excerpt": "Machine learning is a subset of artificial intelligence that enables computers to learn and make decisions from data without being explicitly programmed."
+  }
+}

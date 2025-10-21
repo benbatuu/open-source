@@ -1,0 +1,16 @@
+{
+  "timestamp": "2025-10-20T20:27:12.386Z",
+  "version": "1.0.0",
+  "createdBy": "admin@example.com",
+  "includeMedia": true,
+  "includeAnalytics": true,
+  "files": {
+    "data": true,
+    "content": true,
+    "schemas": true,
+    "media": true,
+    "analytics": true,
+    "comments": true,
+    "components": true
+  }
+}

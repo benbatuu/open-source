@@ -1,0 +1,11 @@
+[
+  {
+    "id": "test",
+    "name": "Test Klasörü",
+    "path": "test",
+    "icon": "heart",
+    "color": "red",
+    "createdAt": "2024-10-21T15:14:00.000Z",
+    "createdBy": "admin"
+  }
+]

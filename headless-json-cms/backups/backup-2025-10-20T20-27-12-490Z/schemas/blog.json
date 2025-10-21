@@ -1,0 +1,19 @@
+{
+  "id": "blog",
+  "name": "Blog",
+  "slug": "blog",
+  "fields": [
+    { "id": "title", "name": "title", "type": "text", "required": true, "placeholder": "Enter blog post title", "description": "The main title of the blog post" },
+    { "id": "excerpt", "name": "excerpt", "type": "textarea", "required": false, "placeholder": "Brief description of the post", "description": "Short excerpt for previews" },
+    { "id": "cover", "name": "cover", "type": "image", "required": false, "placeholder": "Upload cover image", "description": "Main image for the blog post" },
+    { "id": "body", "name": "body", "type": "rich-text", "required": true, "placeholder": "Write your blog post content here", "description": "The main content of the blog post" },
+    { "id": "publishedAt", "name": "publishedAt", "type": "date", "required": true, "placeholder": "Select publication date", "description": "When the post was published" },
+    { "id": "seo-title", "name": "SEO Title", "type": "text", "required": false, "placeholder": "SEO optimized title (max 60 chars)", "description": "Title for search engines and social media" },
+    { "id": "seo-description", "name": "SEO Description", "type": "textarea", "required": false, "placeholder": "SEO description (max 160 chars)", "description": "Meta description for search engines" },
+    { "id": "seo-keywords", "name": "SEO Keywords", "type": "text", "required": false, "placeholder": "keyword1, keyword2, keyword3", "description": "Comma-separated keywords for SEO" },
+    { "id": "seo-image", "name": "SEO Image", "type": "image", "required": false, "placeholder": "Upload SEO image", "description": "Image for social media sharing (1200x630px recommended)" },
+    { "id": "canonical-url", "name": "Canonical URL", "type": "text", "required": false, "placeholder": "https://example.com/blog/post-url", "description": "Canonical URL for this content" }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

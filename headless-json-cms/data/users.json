@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "Admin User",
+    "email": "admin@example.com",
+    "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+    "role": "admin",
+    "createdAt": "2025-10-20T19:45:09.695Z"
+  },
+  {
+    "id": "2",
+    "name": "Editör",
+    "email": "editor@example.com",
+    "password": "$2b$10$SQHgZEys9Zj0V36gzN4FY.VWxK/5xmqHctbIGZMp6S32TkGvY7asi",
+    "role": "editor",
+    "createdAt": "2025-10-20T19:46:25.169Z"
+  },
+  {
+    "id": "3",
+    "name": "Content Editor",
+    "email": "content@example.com",
+    "password": "$2b$10$xKQbJ3TU3oAZ5Cyhz8SnZ.FLcKt96pCXqMiWNjIzMY0WDavd.2Kfa",
+    "role": "editor",
+    "createdAt": "2025-10-20T19:51:26.485Z"
+  }
+]

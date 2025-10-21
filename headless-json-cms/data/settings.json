@@ -1,0 +1,34 @@
+{
+  "general": {
+    "siteName": "Headless CMS",
+    "siteDescription": "Headless JSON CMS",
+    "siteUrl": "https://test.com",
+    "favicon": "/uploads/test/predix.png",
+    "logo": "/uploads/test/predix.png"
+  },
+  "database": {
+    "backupFrequency": "Weekly",
+    "retentionDays": 60,
+    "maxFileSize": 20
+  },
+  "email": {
+    "smtpHost": "smtp.test.com",
+    "smtpPort": 465,
+    "fromEmail": "test@test.com"
+  },
+  "security": {
+    "sessionTimeout": 120,
+    "maxLoginAttempts": 3,
+    "passwordMinLength": 10,
+    "requireTwoFactor": false
+  },
+  "ai": {
+    "enabled": false,
+    "openaiApiKey": "",
+    "openaiModel": "gpt-3.5-turbo",
+    "openaiMaxTokens": 1000,
+    "openaiTemperature": 0.7
+  },
+  "updatedAt": "2025-10-21T13:10:59.133Z",
+  "updatedBy": "1"
+}
