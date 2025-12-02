@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/common/theme-toggle";
 import { useAuth } from "@/lib/hooks/use-auth";
 import {
   DropdownMenu,
@@ -67,8 +66,6 @@ export function Navbar() {
 
         {/* Right side actions */}
         <div className="flex items-center space-x-4">
-          <ThemeToggle />
-          
           {isAuthenticated ? (
             <DropdownMenu>
               <DropdownMenuTrigger asChild>

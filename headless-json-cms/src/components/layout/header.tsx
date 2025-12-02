@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { ThemeToggle } from "@/components/ui/theme-toggle"
 import { Button } from "@/components/ui/button"
 import { Bell, Search, ChevronDown, LogOut, User } from "lucide-react"
 import { Input } from "@/components/ui/input"
@@ -35,9 +34,6 @@ export function Header() {
           <Bell className="h-5 w-5" />
           <span className="absolute -top-1 -right-1 h-3 w-3 bg-destructive rounded-full"></span>
         </Button>
-
-        {/* Theme Toggle */}
-        <ThemeToggle />
 
         {/* User Menu */}
         <div className="flex items-center gap-3">
